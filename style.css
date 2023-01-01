@@ -156,5 +156,123 @@ html{
 }
 
 #about-me .about-me .section-title {
-  
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3ded3;
+  text-decoration-thickness: 5px;
+}
+
+#about-me .about-me h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+#about-me .about-me span {
+  color: #ff5080;
+}
+
+#about-me .about-me h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+#about-me .about-me p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #565656;
+  margin-bottom: 12px;
+}
+
+#about-me .about-me a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  margin-top: 30px;
+  transition: .5s;
+}
+
+#about-me .about-me a:hover {
+  background-color: #ff5080;
+  color: #fff;
+}
+
+/*SERVICES SECTION*/
+
+#services {
+  padding: 100px 15px;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+#services .section-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3ded3;
+  text-decoration-thickness: 5px;
+}
+
+#services .row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+#services .row .service {
+  max-width: 350px;
+  background-color: #fff;
+  padding: 30px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+#services .row .service:hover {
+  box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#services .row .service h4 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+#services .row .service .icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+#services .row .service hr {
+  width: 30%;
+  margin: auto;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+#services .row .service ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#services .row .service p {
+  font-size: 14px;
+  line-height: 22px;
 }
