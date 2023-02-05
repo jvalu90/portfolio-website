@@ -33,7 +33,7 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20 px;
+  padding: 10px 20px;
 }
 
 #introduction .content header .content-header h1 {
@@ -56,6 +56,10 @@ html{
 }
 
 #introduction .content header .content-header nav ul a:hover {
+  color: #ff5080;
+}
+
+#introduction .content header .content-header .selected {
   color: #ff5080;
 }
 
@@ -549,4 +553,87 @@ footer a {
   display: inline-block;
   margin: 5px;
   font-size: 26px;
+}
+
+/*RESPONSIVE WEB DESIGN*/
+
+@media screen and (max-width:800px) {
+  .social-media {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  nav.responsive {
+    display: block;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+  }
+  nav.responsive ul {
+    display: block !important;
+    text-align: center;
+  }
+  nav.responsive ul li {
+    margin: 5px 0;
+  }
+  #icon-nav {
+    display: block;
+  }
+  #introduction .content .presentation h2{
+    font-size: 40px;
+  }
+  #about-me {
+    padding: 50px 0;
+    display: block;
+  }
+  #about-me .content-photo {
+    max-width: 200px;
+    margin: auto;
+  }
+  #about-me .content-photo img {
+    padding: 8px;
+  }
+  #about-me .about-me .section-title {
+    text-align: center;
+  }
+  #about-me .about-me h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  #services {
+    padding: 50px 15px;
+  }
+  #services .row {
+    display: block;
+  }
+  #services .row .service {
+    margin: 10px auto;
+  }
+  .skills-container {
+    padding: 50px 20px;
+  }
+  #portfolio {
+    padding: 50px 0;
+  }
+  #portfolio .row {
+    display: block;
+  }
+  #portfolio .row .project {
+    margin: 10px auto;
+  }
+  #contact {
+    padding: 50px 15px;
+  }
+  #contact .content-form .half {
+    margin-bottom: 15px;
+    display: block;
+  }
+  #contact .content-form .half input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
