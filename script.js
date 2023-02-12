@@ -21,15 +21,15 @@ function responsiveMenu() {
 }
 
 window.onscroll = function() {
-  skillsEfect()
+  skillsEffect()
 };
 
-function skillsEfect() {
+function skillsEffect() {
   let skills = document.getElementById("skills");
   let skillsDistance = window.innerHeight - skills.getBoundingClientRect().top;
   
-  if(skillsDistance >= 300) {
-    document.getElementById("java").classList.add("bar-progress1");
+  if (skillsDistance >= 300) {
+    document.getElementById("java").classList.add("bar-progress1"); 
     document.getElementById("ms").classList.add("bar-progress2");
     document.getElementById("db").classList.add("bar-progress3");
     document.getElementById("html").classList.add("bar-progress4");

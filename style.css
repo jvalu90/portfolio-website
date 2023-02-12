@@ -13,7 +13,7 @@ html{
 }
 
 #introduction{
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); /*TODO: Add a background url url("img/nombre-imagen.jpg")*/
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/introImage.jpg");
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -99,9 +99,33 @@ html{
   text-align: center;
 }
 
-#introduction .content .presentation h2 span {
-  font-size: 25px;
+#introduction .content .presentation h2 span#name {
+  font-size: 55px;
   color: #ff5080;
+}
+
+#introduction .content .presentation h2 span#profession {
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 24ch;
+  text-align: center;
+
+  animation: typing 2s steps(24), 
+  blink 1s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 #introduction .content .presentation .description {
@@ -284,7 +308,7 @@ html{
 /*SKILLS SECTION*/
 
 .skills-container {
-  background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)); /*TODO: Add a background url url("img/nombre-imagen.jpg")*/
+  background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)), url("img/skillsImage.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -319,42 +343,42 @@ html{
 }
 
 /*TODO: This style will  apply later with JS for the animation bar*/
-.skills-container .skill .bar-progress1 {
+.skills-container .skill .bar .bar-progress1 {
   background-color: #fff;
   width: 90%;
   height: 6px;
   animation: progress1 2s forwards;
 }
 
-.skills-container .skill .bar-progress2 {
+.skills-container .skill .bar .bar-progress2 {
   background-color: #fff;
   width: 80%;
   height: 6px;
   animation: progress2 2s forwards;
 }
 
-.skills-container .skill .bar-progress3 {
+.skills-container .skill .bar .bar-progress3 {
   background-color: #fff;
   width: 80%;
   height: 6px;
   animation: progress3 2s forwards;
 }
 
-.skills-container .skill .bar-progress4 {
+.skills-container .skill .bar .bar-progress4 {
   background-color: #fff;
   width: 80%;
   height: 6px;
   animation: progress4 2s forwards;
 }
 
-.skills-container .skill .bar-progress5 {
+.skills-container .skill .bar .bar-progress5 {
   background-color: #fff;
   width: 70%;
   height: 6px;
   animation: progress5 2s forwards;
 }
 
-.skills-container .skill .bar-progress6 {
+.skills-container .skill .bar .bar-progress6 {
   background-color: #fff;
   width: 70%;
   height: 6px;
