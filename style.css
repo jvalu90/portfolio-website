@@ -95,7 +95,6 @@ html{
 
 #introduction .content .presentation h2 {
   font-size: 55px;
-  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -104,16 +103,15 @@ html{
   color: #ff5080;
 }
 
-#introduction .content .presentation h2 span#profession {
+.typewriter { /*TODO: Review padding and responsive*/
   display: block;
   white-space: nowrap;
   border-right: 4px solid;
-  width: 24ch;
+  width: 23ch;
   text-align: center;
 
-  animation: typing 2s steps(24), 
-  blink 1s infinite step-end alternate;
-  overflow: hidden;
+  animation: typing 2s steps(20), blink .5s infinite step-end alternate;
+  overflow:hidden;
 }
 
 @keyframes typing {
